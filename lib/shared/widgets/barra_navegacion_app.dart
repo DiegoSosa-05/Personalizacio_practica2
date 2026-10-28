@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../features/pages/pantalla_inicio.dart';
+import '../../features/inicio/pantalla_inicio.dart';
 import '../../features/tareas/pantalla_mis_habitos.dart';
 import '../../features/configuracion/pantalla_configuracion.dart';
 

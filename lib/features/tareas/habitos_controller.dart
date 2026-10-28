@@ -33,6 +33,13 @@ class HabitosController extends ChangeNotifier {
       meta: '30 minutos',
       icono: Icons.directions_run,
     ),
+    Habito(
+      id: 'meditacion',
+      nombre: 'Meditación',
+      descripcion: 'Practicar meditación durante 10 minutos',
+      meta: '10 minutos',
+      icono: Icons.self_improvement,
+    ),
   ].toList();
 
   List<Habito> get habitos => List.unmodifiable(_habitos);

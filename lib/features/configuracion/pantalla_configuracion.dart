@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../core/widgets/barra_navegacion_app.dart';
-import '../../core/widgets/encabezado_seccion.dart';
-import '../../core/widgets/opcion_apariencia.dart';
+import '../../shared/widgets/barra_navegacion_app.dart';
+import '../../shared/widgets/encabezado_seccion.dart';
+import 'widgets/opcion_apariencia.dart';
 import '../../main.dart';
 
 class PantallaConfiguracion extends StatelessWidget {
