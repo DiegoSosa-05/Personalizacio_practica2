@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class TarjetaHabito extends StatelessWidget {
@@ -7,6 +6,7 @@ class TarjetaHabito extends StatelessWidget {
   final IconData icono;
   final bool completado;
   final ValueChanged<bool> onChanged;
+  final String? detalle; // <- NUEVA LÍNEA
 
   const TarjetaHabito({
     super.key,
@@ -15,6 +15,7 @@ class TarjetaHabito extends StatelessWidget {
     required this.icono,
     required this.completado,
     required this.onChanged,
+    this.detalle,
   });
 
   @override
@@ -25,13 +26,19 @@ class TarjetaHabito extends StatelessWidget {
       child: ListTile(
         leading: CircleAvatar(
           backgroundColor: tema.colorScheme.primaryContainer,
-          child: Icon(
-            icono,
-            color: tema.colorScheme.onPrimaryContainer,
-          ),
+          child: Icon(icono, color: tema.colorScheme.onPrimaryContainer),
         ),
         title: Text(nombre),
-        subtitle: Text(descripcion),
+        subtitle: detalle == null
+            ? Text(descripcion)
+            : Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(descripcion),
+                  const SizedBox(height: 2),
+                  Text(detalle!, style: tema.textTheme.bodySmall),
+                ],
+              ),
         trailing: Checkbox(
           value: completado,
           onChanged: (valor) {
