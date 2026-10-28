@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'features/pages/pantalla_inicio.dart';
 import 'core/theme/app_theme.dart';
 import 'core/theme/appearance_controller.dart';
 
@@ -36,7 +36,7 @@ class _HabitaAppState extends State<HabitaApp> {
           theme: AppTheme.lightTheme,
           darkTheme: AppTheme.darkTheme,
           themeMode: _appearance.themeMode,
-          home: const ThemeDemoScreen(),
+          home: const PantallaInicio(),
         ),
       );
 }
