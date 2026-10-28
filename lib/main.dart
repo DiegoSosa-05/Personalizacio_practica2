@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'features/pages/pantalla_inicio.dart';
+import 'features/inicio/pantalla_inicio.dart';
 import 'core/theme/app_theme.dart';
 import 'core/theme/appearance_controller.dart';
 import 'features/tareas/habitos_controller.dart'; // <- NUEVA LÍNEA

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../inicio/widgets/encabezado_inicio.dart';
-import '../inicio/widgets/tarjeta_resumen.dart';
-import '../inicio/widgets/tarjeta_habito.dart';
+import 'widgets/encabezado_inicio.dart';
+import '../../shared/widgets/tarjeta_resumen.dart';
+import '../../shared/widgets/tarjeta_habito.dart';
 import '../tareas/habitos_controller.dart';
-import '../../core/widgets/barra_navegacion_app.dart';
+import '../../shared/widgets/barra_navegacion_app.dart';
 import '../tareas/pantalla_mis_habitos.dart';
 
 class PantallaInicio extends StatelessWidget {
@@ -17,7 +17,19 @@ class PantallaInicio extends StatelessWidget {
 
     return Scaffold(
       bottomNavigationBar: const BarraNavegacionApp(indiceActual: 0),
-      appBar: AppBar(title: const Text('Habita'), centerTitle: false),
+      appBar: AppBar(
+        title: Text(
+          'Habita',
+          style: tema.textTheme.titleLarge?.copyWith(
+            fontFamily: 'serif',
+            fontSize: 25,
+            fontWeight: FontWeight.w700,
+            letterSpacing: 0.3,
+            color: tema.colorScheme.primary,
+          ),
+        ),
+        centerTitle: true,
+      ),
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.all(20),

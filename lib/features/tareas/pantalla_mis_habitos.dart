@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../core/widgets/barra_navegacion_app.dart';
-import '../../core/widgets/encabezado_seccion.dart';
-import '../inicio/widgets/tarjeta_habito.dart';
-import '../inicio/widgets/tarjeta_resumen.dart';
+import '../../shared/widgets/barra_navegacion_app.dart';
+import '../../shared/widgets/encabezado_seccion.dart';
+import '../../shared/widgets/tarjeta_habito.dart';
+import '../../shared/widgets/tarjeta_resumen.dart';
 import 'habitos_controller.dart';
 
 class PantallaMisHabitos extends StatelessWidget {

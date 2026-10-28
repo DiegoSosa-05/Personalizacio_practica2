@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:personalizacion_practica2/features/inicio/widgets/tarjeta_habito.dart';
+import 'package:personalizacion_practica2/shared/widgets/tarjeta_habito.dart';
 import 'package:personalizacion_practica2/main.dart';
 
 Finder enBarra(String texto) =>
